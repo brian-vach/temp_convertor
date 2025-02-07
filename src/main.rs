@@ -34,14 +34,14 @@ impl eframe::App for TemperatureConvertor {
             ui.horizontal(|ui| {
                 if ui.button("°C").clicked() {
                     if self.unit == 'F' {
-                        self.temperature = f_to_c(self.temperature);
+                        self.temperature = f_to_c(self.temperature).round();
                     }
                     self.unit = 'C';
                     self.temperature = self.temperature.clamp(-100.0, 100.0)
                 }
                 if ui.button("°F").clicked() {
                     if self.unit == 'C' {
-                        self.temperature = c_to_f(self.temperature);
+                        self.temperature = c_to_f(self.temperature).round();
                     }
                     self.unit = 'F';
                     self.temperature = self.temperature.clamp(-148.0, 212.0)
