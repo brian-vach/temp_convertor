@@ -2565,8 +2565,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "temp_convertor"
-version = "0.1.0"
+name = "temperature_convertor"
+version = "1.0.0"
 dependencies = [
  "eframe",
  "egui",
