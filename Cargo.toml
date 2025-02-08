@@ -2,6 +2,12 @@
 name = "temperature_convertor"
 version = "1.0.0"
 edition = "2021"
+authors = ["Brian Vach"]
+description = "A simple application to convert temperature from Fahrenheit to Celcius and vice versa"
+readme = "README.md"
+license = "MIT"
+homepage = "https://github.com/brian-vach/temp_convertor"
+repository = "https://github.com/brian-vach/temp_convertor"
 
 [dependencies]
 eframe = "0.31.0"
